@@ -30,6 +30,15 @@ function characterModel(database) {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      location: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
+      episode: {
+        type: DataTypes.ARRAY(DataTypes.STRING),
+        allowNull: false,
+        defaultValue: [],
+      },
       image: {
         type: DataTypes.STRING,
         allowNull: false,

@@ -15,6 +15,8 @@ const getCharDetail = async (req, res) => {
         gender: response.data.gender,
         status: response.data.status,
         origin: response.data.origin.name,
+        location: response.data.location.name,
+        episode: response.data.episode,
       };
       return res.status(200).json(character);
     } catch (error) {
